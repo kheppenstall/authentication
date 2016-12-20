@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>Create Your Account</h2>
+  <div class="col-md-6">
+    <%= bootstrap_form_for(@user) do |f| %>
+      <%= f.text_field :name %>
+      <%= f.email_field :email %>
+      <%= f.password_field :password %>
+      <%= f.submit %>
+    <% end %>
+  </div>
+</div>
